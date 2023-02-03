@@ -8,23 +8,9 @@ This project was:
 
 ## Next Steps
 
-### initial module installs
+###  run app 
 
-npm i react-icons --save  
-npm i react-router-dom --save  
-npm i styled-components --save  
-npm i prettier --save-dev  
-npm i eslint eslint-config-prettier eslint-plugin-prettier --save-dev
+npm run start
 
-## linter for react hooks
-
-npm i eslint-plugin-react-hooks --save-dev
-
-### initialized eslint
-
-npx eslint --init
-
-### manually run prettier
-
-npx prettier --write src/App.js
-npx prettier --write .
+###  install modules 
+###  create components
