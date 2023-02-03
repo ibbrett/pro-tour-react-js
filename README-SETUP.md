@@ -5,6 +5,6 @@
 ### initialize app
 
 nvm use 18.0.0  
-npx create-react-app react-playground  
-cd react-playground  
+npx create-react-app pro-tour-react-js  
+cd pro-tour-react-js  
 npm i
