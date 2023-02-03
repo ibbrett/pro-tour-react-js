@@ -9,6 +9,4 @@ npx create-react-app pro-tour-react-js
 cd pro-tour-react-js  
 npm i
 
-### back
-
-<-- [README](../README.md)
+### back to [README](../README.md)
