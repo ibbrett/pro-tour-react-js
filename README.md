@@ -6,6 +6,8 @@ This project was:
 - created with [App Setup](./README/README-SETUP.md)
 - run in this [Environment](./README/README-ENV.md)
 
+![Current Version Screen Shot](./README/screen-shot.png "SOME RANDOM TEXT")
+
 ## Next Steps
 
 ### run app
