@@ -6,7 +6,7 @@ This project was:
 - created with [App Setup](./README/README-SETUP.md)
 - run in this [Environment](./README/README-ENV.md)
 
-![Current Version Screen Shot](./README/screen-shot.png "Current Version Screen Shot" | width=200)
+<img src="./README/screen-shot.png" width="200" alt="Current Version Screen Shot">
 
 ## Next Steps
 
