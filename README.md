@@ -8,9 +8,10 @@ This project was:
 
 ## Next Steps
 
-###  run app 
+### run app
 
 npm run start
 
-###  install modules 
-###  create components
+### install modules
+
+### create components
