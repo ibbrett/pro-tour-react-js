@@ -11,28 +11,23 @@ cd pro-tour-react-js
 npm i
 ```
 
-### add modules to keep the code clean/consistent
+### add modules, config VSCode to keep the code clean/consistent
 
-```shell
-npm install eslint --save-dev
-npx eslint --init
-npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
-nano .prettierrc
-```
-
-(sample) contents of .prettierrc
+1. add/enable eslint extension to VSCode
+2. create [.eslintrc](../.eslintrc)
 
 ```js
-{
-  "semi": true,
-  "tabWidth": 2,
-  "printWidth": 100,
-  "singleQuote": true,
-  "trailingComma": "none",
-  "jsxBracketSameLine": true,
-  "arrowParens": "always"
-}
+{"extends": "react-app"}
 ```
+
+3. add/enable Prettier extension to VSCode
+4. install modules
+
+```shell
+npm i prettier eslint-config-prettier eslint-plugin-prettier --save
+```
+
+5. created [workspace vscode settings file](../.vscode/settings.json)
 
 ### add style modules
 
