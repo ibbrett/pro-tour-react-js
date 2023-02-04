@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import { GiWaveSurfer } from 'react-icons/gi';
-import GlobalStyle from './style/GlobalStyle';
+import styled, { css } from "styled-components";
+import { GiWaveSurfer } from "react-icons/gi";
+import GlobalStyle from "./style/GlobalStyle";
 
 const App = () => {
   const margin = css`
@@ -42,7 +42,7 @@ const App = () => {
           <IconContainer>
             <GiWaveSurfer />
           </IconContainer>
-          <HeaderLabel>World Surf League</HeaderLabel>
+          <HeaderLabel>Pro Tour</HeaderLabel>
         </Header>
       </Container>
     </>

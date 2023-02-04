@@ -1,8 +1,22 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // allows us to autoformat with prettier every time we save a file
   "editor.formatOnSave": true,
-  "eslint.format.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+
+  // turn off prettier forjavascript b/c we set up eslint to handle this
+  "[javascript]": {
+    "editor.formatOnSave": false,
+  },
+
+  // to fix any issues that it can
+  // "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "eslint.alwaysShowStatus": true,
+
+  /*
+  "prettier.disableLanguages": [
+    "js"
+  ],
+  */
+  "files.autoSave": "onFocusChange"
 }
