@@ -30,7 +30,11 @@ set REACT_APP_SHOW_MENU false to archive the menu option for now
 
 ### run app
 
+```shell
+nvm use 18.0.0
+npm i
 npm run start
+```
 
 ### install modules
 
