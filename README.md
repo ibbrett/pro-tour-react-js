@@ -35,7 +35,3 @@ nvm use 18.0.0
 npm i
 npm run start
 ```
-
-### install modules
-
-### create components
