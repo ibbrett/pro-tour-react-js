@@ -47,7 +47,7 @@ const ChangeContainer = styled.div`
 const ChangeColumn = styled.div`
   display: inline-block;
   padding: 3px;
-  width: 120px;
+  width: 140px;
 `;
 
 const IconContainer = styled.div`

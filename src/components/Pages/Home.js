@@ -25,6 +25,7 @@ import {
 } from "../Styled/StyledHome";
 import { surfers as data } from "../../data/surfers.js";
 
+const firstPlace = 1;
 const topCount = 5;
 const showMenu = process.env?.REACT_APP_SHOW_MENU === "true" ? true : false;
 
@@ -100,7 +101,13 @@ const Home = () => {
             (surfer) => surfer.makingTheCut === false
           )
         : []
-      : [data[rankIndex]["men"][0], data[rankIndex]["women"][0]];
+      : data[rankIndex]["men"]
+          .filter((surfer) => surfer.rank <= firstPlace)
+          .concat(
+            data[rankIndex]["women"].filter(
+              (surfer) => surfer.rank <= firstPlace
+            )
+          );
   };
 
   const iconFontSize = "42px";
