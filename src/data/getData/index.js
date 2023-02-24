@@ -88,7 +88,7 @@ const getList = async (baseUrl) => {
               return surferList;
 
           }
-      }, (error) => console.log(err) );
+      }, (err) => console.log(err) );
 
     return list;
 
