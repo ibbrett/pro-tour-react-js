@@ -28,12 +28,15 @@ import { surfers as data } from "../../data/surfers.js";
 const firstPlace = 1;
 const topCount = 5;
 const showMenu = process.env?.REACT_APP_SHOW_MENU === "true" ? true : false;
+const iconColor = "blue"; // "orange";
 
 const rankEventCount = data.length;
 const themes = ["default", "hot to cold"];
 const genders = ["top dogs", "men", "women"];
-const listSize = ["all", "top five", "above the cut", "below the cut"];
+const listSize = ["all", "top five"]; // ["all", "top five", "above the cut", "below the cut"];
+
 const rankEvents = data.map((event) => event.label);
+const rankDates = data.map((event) => event.completed);
 
 const Home = () => {
   // local state
@@ -42,6 +45,8 @@ const Home = () => {
   const [rankIndex, setRankIndex] = useState(rankEventCount - 1);
   const [howMany, setHowMany] = useState(0);
   const [showModal, setShowModal] = useState(false);
+
+  console.log(rankEvents);
 
   // handlers
   const openModal = (isOpen) => {
@@ -110,7 +115,7 @@ const Home = () => {
           );
   };
 
-  const iconFontSize = "42px";
+  const iconFontSize = "32px"; // "42px";
 
   return (
     <>
@@ -128,14 +133,19 @@ const Home = () => {
                 </Link>
               )}
             </HeaderChild>
+            <HeaderChild>
+              {rankEvents[rankIndex]} - completed: {rankDates[rankIndex]}
+            </HeaderChild>
             {showMenu && (
               <HeaderChild>
                 <HeaderInfo>
                   <HeaderColumn fontSize={iconFontSize}>
-                    <Icon color={genders[gender] === "women" ? "pink" : null}>
+                    <Icon
+                      color={genders[gender] === "women" ? iconColor : null}
+                    >
                       <FaFemale />
                     </Icon>
-                    <Icon color={genders[gender] === "men" ? "blue" : null}>
+                    <Icon color={genders[gender] === "men" ? iconColor : null}>
                       <FaMale />
                     </Icon>
                   </HeaderColumn>
@@ -144,9 +154,10 @@ const Home = () => {
                   </HeaderColumn>
                 </HeaderInfo>
 
+                {/*
                 <HeaderInfo>
                   <HeaderColumn fontSize={iconFontSize}>
-                    <Icon color={"orange"}>
+                    <Icon color={iconColor}>
                       <FaPaintBrush />
                     </Icon>
                   </HeaderColumn>
@@ -154,10 +165,11 @@ const Home = () => {
                     {ChangeItem("", theme, setTheme, themes)}
                   </HeaderColumn>
                 </HeaderInfo>
+                */}
 
                 <HeaderInfo>
                   <HeaderColumn fontSize={iconFontSize}>
-                    <Icon color={"cyan"}>
+                    <Icon color={iconColor}>
                       <CiCalendarDate />
                     </Icon>
                   </HeaderColumn>
@@ -168,7 +180,7 @@ const Home = () => {
 
                 <HeaderInfo>
                   <HeaderColumn fontSize={iconFontSize}>
-                    <Icon color={"brown"}>
+                    <Icon color={iconColor}>
                       <ImListNumbered />
                     </Icon>
                   </HeaderColumn>
@@ -185,7 +197,7 @@ const Home = () => {
         </Container>
       </Wrapper>
       <Modal showModal={showModal} openModal={openModal}>
-        {ChangeItem("Theme", theme, setTheme, themes)}
+        {/*ChangeItem("Theme", theme, setTheme, themes)*/}
         {ChangeItem("Gender", gender, setGender, genders)}
         {ChangeItem("Rank Event", rankIndex, setRankIndex, rankEvents)}
         {ChangeItem(

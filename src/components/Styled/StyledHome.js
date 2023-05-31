@@ -41,7 +41,7 @@ const Label = styled.span`
 `;
 
 const ChangeContainer = styled.div`
-  margin: 8px;
+  margin: 0;
 `;
 
 const ChangeColumn = styled.div`
@@ -107,7 +107,7 @@ const HeaderChild = styled.div`
 `;
 
 const HeaderInfo = styled.div`
-  margin: 0 20px;
+  margin: 0;
 `;
 
 const HeaderColumn = styled.div`
