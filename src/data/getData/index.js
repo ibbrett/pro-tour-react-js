@@ -1,5 +1,7 @@
+const fs = require("fs");
 const axios = require("axios");
 const cheerio = require("cheerio");
+
 const urls = [
   {
     baseUrl: "https://www.worldsurfleague.com/athletes/tour/mct?year=2023",
@@ -12,22 +14,6 @@ const urls = [
   },
 ];
 const baseSelector = "#primary > div > div > div.new-page-body > div";
-/*
-const supplemental = [
-  {
-    id: 9167, // "Joao Chianca"
-    height: 177.8, // 5'10"
-    weight: 75, // 165 lbs
-  },
-  {
-    id: 9167, // "Carlos Munoz"
-    height: 180, // 5'11"
-    weight: "?"
-  }
-];
-*/
-
-const fs = require("fs");
 
 const getAthleteId = (str) => {
   const arr = str.split(" ");
