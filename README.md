@@ -8,7 +8,8 @@ This project was:
 
 ## Screen Shot
 
-<img src="./README/screen-shot.png" width="200" alt="Current Version Screen Shot">
+<img src="./README/screen-shot-men.png" width="200" alt="Current Version Screen Shot - Men">
+<img src="./README/screen-shot-women.png" width="200" alt="Current Version Screen Shot - Women">
 
 ## Updates
 
