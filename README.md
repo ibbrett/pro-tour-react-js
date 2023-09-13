@@ -31,6 +31,8 @@ This project was:
 
   - use env var to toggle
 
+- [x] added screen scrape script to code
+
 - [x] completed season - results in for all 11 contests
 
 ### set env var - tells app to show modal versus menu of options
@@ -45,3 +47,12 @@ nvm use 18.0.0
 npm i
 npm run start
 ```
+
+### scrape results - current standings/rankings
+
+```shell
+cd src/data/getData
+node index.js
+```
+
+- [Results for contest ended 9/9/2023](./src/data/getData/surfers-2023-09-13T18%3A59%3A05.574Z.js)
