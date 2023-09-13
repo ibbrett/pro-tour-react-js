@@ -9,6 +9,7 @@ This project was:
 ## Screen Shot
 
 <p float="left">
+<img src="./README/screen-shot-top-dogs.png" width="200" alt="Current Version Screen Shot - Top Dogs">
 <img src="./README/screen-shot-men.png" width="200" alt="Current Version Screen Shot - Men">
 <img src="./README/screen-shot-women.png" width="200" alt="Current Version Screen Shot - Women">
 </p>
