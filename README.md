@@ -10,6 +10,9 @@ This project was:
 
 <p float="left">
 <img src="./README/screen-shot-top-dogs.png" width="200" alt="Current Version Screen Shot - Top Dogs">
+</p>
+
+<p float="left">
 <img src="./README/screen-shot-men.png" width="200" alt="Current Version Screen Shot - Men">
 <img src="./README/screen-shot-women.png" width="200" alt="Current Version Screen Shot - Women">
 </p>
@@ -25,7 +28,10 @@ This project was:
 
 - [x] created menu modal with content enabling changing of these options
 - [x] created options menu, an alternative to the modal approach
+
   - use env var to toggle
+
+- [x] completed season - results in for all 11 contests
 
 ### set env var - tells app to show modal versus menu of options
 
