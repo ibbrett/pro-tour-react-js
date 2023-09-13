@@ -31,7 +31,7 @@ This project was:
 
   - use env var to toggle
 
-- [x] added screen scrape script to code
+- [x] added axios/cheerio screen scrape script to code
 
 - [x] completed season - results in for all 11 contests
 
